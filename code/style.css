@@ -1,0 +1,14 @@
+.table {
+    width:70%;
+}
+
+.table-header-cell {
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+}
+
+.table-cell,.table-header-cell {
+  float: left;
+  width: 50%;
+}

@@ -1,0 +1,11 @@
+{
+    "productList": [
+        {
+            "product": "Pizzetta",
+            "price": 1
+        },{
+            "product": "Hot Dog",
+            "price": 2
+        }
+    ]
+}
