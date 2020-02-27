@@ -24,8 +24,8 @@ var app = {
         // create a different data-id attribute for each plus button
         app.productList.forEach((element, idx) => {
             let productRow = `<div class="table-row">
-            <div class="table-cell">${element.product}</div>
-            <div class="table-cell">${element.price} euro</div>
+            <div class="table-cell">${element.name}</div>
+            <div class="table-cell">${element.barcode} euro</div>
             </div>`;
             $("#table-body").append(productRow);
             console.log(productRow);
