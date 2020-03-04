@@ -1,5 +1,9 @@
 <?php
 
+$query_string = $_SERVER["QUERY_STRING"];
+parse_str($query_string,$query);
+$barcode_value = $query["barcode"];
+
 // Create a PHP object
 $productObj = new stdClass();
 $productObj->productList = array();
