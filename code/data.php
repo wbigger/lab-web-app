@@ -19,7 +19,7 @@ if ($db_connection->connect_error) {
     die("connection failed: " . $db_connection->connect_error);
 }
 
-$results = $db_connection->query("SELECT * FROM `item`");
+$results = $db_connection->query("SELECT * FROM `item` WHERE `barcode` = '".$barcode_value."'");
 if ($results) {
     foreach($results as $row) {
         $item = new stdClass();
