@@ -2,28 +2,195 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="jquery-3.3.1.min.js"></script>
-    <script src="app.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Laboratorio didattica innovativa - G. Marconi Civitavecchia</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <h1>Product List</h1>
-    <div id="table">
-        <div class="table-row">
-            <div id="table-header">
-                <div class="table-header-cell">Nome</div>
-                <div class="table-header-cell">Barcode</div>
-                <div class="table-header-cell">Img</div>
-            </div>
-            <div id="table-body">
-            </div>
-        </div>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Innovative Teaching Lab</div>
+      <div class="list-group list-group-flush">
+        <a href="#section-home" class="list-group-item list-group-item-action bg-light">Home</a>
+        <a href="#section-lighting" class="list-group-item list-group-item-action bg-light">Lighting environments</a>
+        <a href="#section-borrow" class="list-group-item list-group-item-action bg-light">Borrow material</a>
+        <a href="#section-internet" class="list-group-item list-group-item-action bg-light">Internet access</a>
+        <a href="#section-temperature" class="list-group-item list-group-item-action bg-light">Room temperature</a>
+        <a href="#section-break" class="list-group-item list-group-item-action bg-light">Break Area</a>
+      </div>
     </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <!-- <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button> -->
+
+        <button id="menu-toggle" class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      </nav>
+
+      <div id="section-home" class="container-fluid tab-content">
+        <h1 class="mt-4">Home</h1>
+        <p>Welcome to the Innovative Teaching Lab!</p>
+      </div>
+
+      <div id="section-lighting" class="container-fluid tab-content">
+        <h1 class="mt-4">Lighting environments</h1>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Presentation area</a>
+                </h4>
+                <label for="presentation-light-range">Lights intensity</label>
+                <input type="range" class="light-range" id="presentation-light-range">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Workshop area</a>
+                </h4>
+                <label for="workshop-light-range">Lights intensity</label>
+                <input type="range" class="light-range" id="workshop-light-range">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Maker area</a>
+                </h4>
+                <label for="maker-light-range">Lights intensity</label>
+                <input type="range" class="light-range" id="maker-light-range">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">VR Area</a>
+                </h4>
+                <label for="vr-light-range">Lights intensity</label>
+                <input type="range" class="light-range" id="vr-light-range">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="section-borrow" class="container-fluid tab-content">
+        <h1 class="mt-4">Borrow material</h1>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#"></a>
+                </h4>
+                <img src="" alt="product logo">
+                <button type="button" class="btn btn-primary">Check-in</button>
+                <button type="button" class="btn btn-secondary">Check-out</button>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Raspberry</a>
+                </h4>
+                <img src="https://5cinf-labmarconi.s3-us-west-1.amazonaws.com/raspberry.png" alt="product image">
+                <button type="button" class="btn btn-primary">Check-in</button>
+                <button type="button" class="btn btn-secondary">Check-out</button>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div id="section-internet" class="container-fluid tab-content">
+        <h1 class="mt-4">Internet access</h1>
+      </div>
+      <div id="section-temperature" class="container-fluid tab-content">
+        <h1 class="mt-4">Room temperature</h1>
+        <p>Something here to manage the room temperature.</p>
+      </div>
+      <div id="section-break" class="container-fluid tab-content">
+        <h1 class="mt-4">Break area</h1>
+        <p>Something here to manage the break area.</p>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+
+    sliderPrint = function () {
+      //output.innerHTML = this.value;
+      // PROF: in realtà sarebbe dovuto essere
+      console.log(`Il valore dello slides ${this.id} è: ${this.value}`);
+    }
+
+    $(document).ready(function () {
+      $('.nav ul li:first').addClass('active');
+      $('.tab-content:not(:first)').hide();
+      console.log("start");
+      $('.list-group a').click(function (event) {
+        event.preventDefault();
+        var content = $(this).attr('href');
+        console.log("click" + content);
+        $(this).parent().addClass('active');
+        $(this).parent().siblings().removeClass('active');
+        $(content).show();
+        $(content).siblings('.tab-content').hide();
+      });
+
+      document.getElementById("presentation-light-range").oninput = sliderPrint;
+      document.getElementById("workshop-light-range").oninput = sliderPrint;
+      document.getElementById("maker-light-range").oninput = sliderPrint;
+      document.getElementById("vr-light-range").oninput = sliderPrint;
+    });
+  </script>
+
+  <script src="app.js"></script>
 </body>
 
 </html>

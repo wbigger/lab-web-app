@@ -3,7 +3,6 @@ var app = {
     productList: {},
     init: function () {
         console.log("init here!");
-        $("title").text("Web app template");
         // Get the product list from the database
         app.getProductList();
     },
@@ -17,22 +16,11 @@ var app = {
     },
     onSuccess: function (jsonData) {
         console.log(jsonData);
-        // Delete the current table
-        $("#table-body").html("");
         // save data in a local variable
         app.productList = jsonData.productList;
-        // update the list
-        // for each element, get both the object (element) and its index (idx) in the list
-        // create a different data-id attribute for each plus button
-        app.productList.forEach((element, idx) => {
-            let productRow = `<div class="table-row">
-            <div class="table-cell">${element.name}</div>
-            <div class="table-cell">${element.barcode}</div>
-            <div class="table-cell"><img src="${element.img_url}" alt="product image"></div>
-            </div>`;
-            $("#table-body").append(productRow);
-            console.log(productRow);
-        });
+        let item = app.productList[0];
+        $(".card-title>a").html(item.name);
+        $(".card-body>img").attr("src",item.img_url);
     },
     onError: function (e) {
         console.log("error!");
