@@ -25,6 +25,7 @@ if ($results) {
         $item = new stdClass();
         $item->name = $row["name"];
         $item->barcode = $row["barcode"];
+        $item->img_url = $row["img_url"];
         $productObj->productList[] = $item;
     }
 }
@@ -32,6 +33,7 @@ if ($results) {
 $productJson = json_encode($productObj);
 
 // return the string to the client
+header('Content-Type: application/json');
 echo $productJson;
 
 ?>
